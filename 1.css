@@ -1,0 +1,45 @@
+
+h1{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.section{
+	display: grid;
+	grid-template:
+	"h h"auto
+	"a b"auto
+	"f f"auto/40% 60%
+}
+#header{
+	grid-area: h
+}
+#a{
+	grid-area: a
+}
+#b{
+	grid-area: b
+}
+#footer{
+	grid-area: f
+}
+body{
+	background-color: #c9c99c;
+}
+a{
+	text-decoration: none;
+	color: #686745;
+}
+a:hover{
+	color: #8f8e68;
+}
+@media(max-width: 768px){
+	.section{
+		display: grid;
+		grid-template:
+		"h"200px
+		"a"auto
+		"b"auto
+		"f"auto/auto
+	}
+}
